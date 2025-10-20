@@ -1,4 +1,6 @@
-import { TypingTutor } from './scenes/TypingTutor.js';
+import { Home } from './scenes/Home.js';
+import { Practice } from './scenes/Practice.js';
+import { Sentences } from './scenes/Sentences.js';
 
 const config = {
     type: Phaser.AUTO,
@@ -15,7 +17,9 @@ const config = {
         resolution: window.devicePixelRatio
     },
     scene: [
-        TypingTutor
+        Home,
+        Practice,
+        Sentences
     ],
     scale: {
         mode: Phaser.Scale.FIT,
@@ -24,4 +28,3 @@ const config = {
 }
 
 new Phaser.Game(config);
-            
